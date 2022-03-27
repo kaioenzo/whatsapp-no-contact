@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Aquino-Demo';
+    src: url(fonts/Aquino-Demo.ttf);
+}
+h1,h2,h3,h4,h5,p,a{
+    font-family: 'Aquino-Demo';
+    color: #ececec;
+}
+a{
+    text-decoration: none;
+}
+p{
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+body{
+ margin: 0;
+ padding: 0;
+   
+}
+div#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+    margin: 0;
+    background: rgb(34,163,136) cover;
+    background: linear-gradient(180deg, rgba(34,163,136,1) 0%, rgba(34,163,136,1) 70%, rgba(39,113,150,1) 100%) no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+div#logo{
+text-align: center;
+padding: 0;
+}
+div#logo h1 {
+    margin: 0;
+    padding: 0;
+}
+
+div.dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.dados>h2{
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+div.dados input{
+    width: 210px;
+    height: 25px;
+    margin-top: 10px;
+    background: #cafffb;
+    border: none;
+    border-radius: 10px;
+}
+div.dados textarea{
+    width: 210px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #cafffb;
+    resize: none;
+}
+div#botao-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a#enviar{
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #062c25;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+}

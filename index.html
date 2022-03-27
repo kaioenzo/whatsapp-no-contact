@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whatsapp No Contact</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <form action="" id="form">
-        <label for="telefone">Digite o número de celular:</label>
-        <input type="tel" name="telefone" id="telefone" placeholder="DDD 9xxxx-xxxx" required>
-        <label for="texto">Escreva a mensagem</label>
-        <input type="text" name="texto" id="texto" placeholder="Opcional" required>
-        <input type="button" value="Enviar" id="enviar">
-    </form>
+    <div id="main">
+        <div id="logo">
+            <img src="img/WPP_Branco.png" alt="">
+            <h1>Whatsapp NO CONTACT</h1>
+            
+        </div>
+        <p>ENVIE MENSAGENS SEM PRECISAR ADICIONAR O CONTATO NO Whatsapp!</p>
+        <div>
+            <div>
+                
+            </div>
+            <form action="" id="form">
+                <div class="dados">
+                    <h2>INSIRA O NUMERo</h2>
+                    <input type="tel" name="telefone" id="telefone" placeholder="DDD 9xxxx-xxxx" required>
+                </div>
+                <div class="dados">
+                    <h2>Escreva a mensagem:</h2>
+                    <!-- <input type="text" name="texto" id="texto" placeholder="Opcional" required> -->
+                    <textarea name="texto" id="texto" placeholder="Opcional"></textarea>
+                    
+                </div>
+                <div id="botao-div">
+                    <a href="#" id="enviar">ENVIAR</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
