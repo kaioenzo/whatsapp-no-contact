@@ -2,7 +2,6 @@ document.getElementById('enviar').onclick = () => {
     let { telefone, texto } = telefoneFiltrado();
     let url = `https://api.whatsapp.com/send?phone=55${telefone}&text=${texto}`
     if (telefone!="") {
-        console.log(url)
         window.open(url)
     }else if(telefone=="") {
         alert('Digite um telefone válido!')
