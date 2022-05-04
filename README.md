@@ -9,6 +9,7 @@
 <img src="https://github.com/kaioenzo/whatsapp-no-contact/blob/main/img/FireShot%20Capture%20004%20-%20Whatsapp%20No%20Contact%20-%20kaioenzo.github.io.png?raw=true" alt="exemplo imagem do projeto">
 
 Aplicação Web para facilitar o envio de mensagens via whatsapp sem a necessidade de adicionar o contato no celular.
+Design by [Kauã Seichi](https://www.behance.net/kauaseichigomes)
 
 ### Tecnologias utlizadas
 
