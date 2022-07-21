@@ -10,27 +10,28 @@ document.getElementById('form').onsubmit = () => {
     function telefoneFiltrado() {
         let telefone = document.getElementById('telefone').value;
         let texto = document.getElementById('texto').value;
-        let regex=/(\s|\-|[a-z])/ig;
+        let regex = /(\D|\-[a-z])/g
         const caracterInesperado = regex.test(telefone)
         if(telefone==""){
             alert(alertaVazio())
-        }
-        else if (caracterInesperado==true || telefone!=13) {
-            alert(alertaErro());
-        }else{
-        const telefoneFiltrado = telefone.replace(regex, ''); 
-        const telefoneAjustado = telefoneFiltrado;
-       
-        telefone = telefoneAjustado;
+            }
 
-        return { telefone, texto };}
+        else if (caracterInesperado==true) {
+            alert(alertaErro())
+            }
+
+        else{
+        const telefoneFiltrado = telefone.replace(regex, '')
+        const telefoneAjustado = telefoneFiltrado
+        telefone = telefoneAjustado;
+        return { telefone, texto }
+            }
 
         function alertaErro() {
-            return 'Digite um telefone válido!';
+            return 'Digite um telefone válido!'
         }
         function alertaVazio() {
-            return 'Digite um telefone!';
+            return 'Digite um telefone!'
         }
     }
 }
-
